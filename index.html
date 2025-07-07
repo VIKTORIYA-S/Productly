@@ -9,7 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link type="image/favicon" sizes="32x32" rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link type="image/favicon" sizes="32x32" rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <script src="script.js"></script>
     <title>Productly</title>
@@ -17,45 +18,46 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
-            <div class="header__block header__block-logo">
+        <div class="container header__container d-flex">
+            <div class="header__block-logo">
                 <a class="logo__link" href="index.html">
-                    <img class="logo__img" src="img/logo.png" alt="Productly">
-                    <img class="logo__title" src="img/Productly.png" alt="">
+                    <img class="logo__img" src="img/logo.png" alt="icon">
+                    <img class="logo__title" src="img/Productly.png" alt="Productly">
                 </a>
             </div>
-            <nav class="header__block header__block-nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#product">Product</a>
+            <nav class="navbar navbar-expand       me-auto mb-2 mb-lg-0">
+                <ul class="nav__list list-group navbar-nav">
+                    <li class="list-group-item">
+                        <a class="link-underline link-underline-opacity-0" href="#product">Product</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#customers">Customers</a>
+                    <li class="list-group-item">
+                        <a class="link-underline link-underline-opacity-0" href="#customers">Customers</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#pricng">Pricng</a>
+                    <li class="list-group-item">
+                        <a class="link-underline link-underline-opacity-0" href="#pricng">Pricng</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#resources">Resources</a>
+                    <li class="list-group-item">
+                        <a class="link-underline link-underline-opacity-0" href="#resources">Resources</a>
                     </li>
                 </ul>
             </nav>
-            <div class="header__block">
-                <button class="nav__btn nav__btn-white">Sign In</button>
-                <button class="nav__btn nav__btn-color btn">Sign Up</button>
+            <div class="">
+                <button class="btn nav-btn btn-outline-secondary">Sign In</button>
+                <button class="btn btn-warning">Sign Up</button>
             </div>
         </div>
     </header>
     <main class="main">
         <section class="hero" id="product">
             <div class="container hero__container">
-                <div class="hero__content">
+                <div class="container hero__content">
                     <h1 class="hero__title">The Design Thinking superpowers</h1>
-                    <p class="hero__text">Tools, tutorials, design and innovation experts, all in one place! The most
+                    <p class="hero__text text-start">Tools, tutorials, design and innovation experts, all in one place!
+                        The most
                         intuitive way to imagine your next user experience.</p>
                     <div class="hero__btns">
-                        <button class="hero__btn btn">Get Started</button>
-                        <a class="hero__link" href="#">
+                        <button class="btn hero__btn">Get Started</button>
+                        <a class="hero__link link-underline link-underline-opacity-0" href="#">
                             <img class="hero__arrow" src="img/Triangle.png" alt="arrow">
                             Watch the Video
                         </a>
@@ -69,37 +71,37 @@
         <section class="cards" id="customers">
             <div class="container cards__container">
                 <h2 class="cards__title">We design tools to unveil your superpowers</h2>
-                <div class="cards__content">
-                    <div class="card card-1">
+                <div class="cards__content  card-group">
+                    <div class="card">
                         <div class="card__icon card__icon-violet">
                             <img src="img/icon_1.png" alt="icon">
                         </div>
                         <h3 class="card__title">First click tests</h3>
-                        <p class="card__text">While most people enjoy casino gambling.</p>
+                        <p class="card__text">While most people enjoy <br> casino gambling.</p>
                     </div>
-                    <div class="card card-1">
+                    <div class="card">
                         <div class="card__icon card__icon-orange">
                             <img src="img/icon_2.png" alt="icon">
                         </div>
                         <h3 class="card__title">Design surveys</h3>
                         <p class="card__text">Sports betting, lottery and bingo playing for the fun</p>
                     </div>
-                    <div class="card card-1">
+                    <div class="card">
                         <div class="card__icon card__icon-red">
                             <img src="img/icon_3.png" alt="icon">
                         </div>
                         <h3 class="card__title">Preference tests</h3>
-                        <p class="card__text">The Myspace page defines the individual</p>
+                        <p class="card__text">The Myspace page defines <br> the individual</p>
                     </div>
                     <div class="card">
                         <div class="card__icon card__icon-blue">
                             <img src="img/icon_4.png" alt="icon">
                         </div>
                         <h3 class="card__title">Five second tests</h3>
-                        <p class="card__text">Personal choices and the overall personality of the person.</p>
+                        <p class="card__text">Personal choices and the <br> overall personality of the <br> person.</p>
                     </div>
                 </div>
-                <button class="card__btn btn">Sign Up now</button>
+                <button class="btn hero__btn">Sign Up now</button>
             </div>
         </section>
         <section class="info" id="pricng">
@@ -128,15 +130,12 @@
                     </div>
                 </div>
                 <div class="info__card info__card-reverse">
-                    <div class="info__img info__img-reverse">
-                        <img class="info__img-2" src="img/Image_2.png" alt="info">
-                    </div>
                     <div class="info__content info__content-reverse">
                         <p class="info__text info__text-1">Easier decision making for</p>
                         <h2 class="info__title">Product Managers</h2>
                         <div class="info__block">
                             <div class="info__item">
-                                <p class="info__text">The Myspace page defines the individual, his or her
+                                <p class="info__text info__text-block">The Myspace page defines the individual, his or her
                                     characteristics,
                                     traits,
                                     personal choices
@@ -167,12 +166,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="info__img">
+                    <div class="info__img">
                         <img class="info__img-2" src="img/Image_2.png" alt="info">
-                    </div> -->
+                    </div>
                 </div>
                 <div class="info__card">
-                    <div class="info__content">
+                    <div class="info__content info__content-last">
                         <p class="info__text info__text-1">Optimisation for</p>
                         <h2 class="info__title">Marketers</h2>
                         <p class="info__text">Few would argue that, despite the advancements of feminism over the past
@@ -200,46 +199,52 @@
     <footer class="footer" id="resources">
         <div class="container footer__container">
             <div class="footer__logo">
-                <a class="logo__link footer__logo-link" href="index.html">
+                <a class="logo__link footer__logo-link link-offset-2 link-underline link-underline-opacity-0"
+                    href="index.html">
                     <img class="logo__img footer__logo-img" src="img/logo.png" alt="Productly">
                     <img class="logo__title footer__logo-title" src="img/Productly.png" alt="">
                 </a>
             </div>
-            <div class="footer__wrapper">
-                <div class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Blog</a>
+                <div class="footer__nav    navbar navbar-expand-lg bg-body-tertiary">
+                    <ul class="footer__list   list-group">
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Blog</a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Contact</a>
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Contact</a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">FAQ</a>
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">FAQ</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__list">
-                    <ul>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Disclaimer</a>
+                <div class="footer__list  list-group">
+                    <ul class="list-group">
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Disclaimer</a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Financing</a>
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Financing</a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Privacy Policy</a>
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Privacy Policy</a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Terms of Service</a>
+                        <li class="footer__item   list-group-item">
+                            <a class="footer__link link-offset-2 link-underline link-underline-opacity-0" href="#">Terms
+                                of Service</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__form">
-                    <input class="footer__input" type="text">
-                    <button class="footer__btn btn">Sign up Now</button>
+                    <input class="footer__input  form-control" type="text">
+                    <button class="footer__btn btn hero__btn">Sign up Now</button>
                 </div>
-            </div>
         </div>
     </footer>
 </body>
